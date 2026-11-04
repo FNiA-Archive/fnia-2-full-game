@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if instance_exists(obj_powerout)
+{
+    if image_index &lt; 0
+    and image_speed = -0.8
+    {
+        image_speed = 0
+        image_index = 0
+    }
+    exit
+}
+if dir = 2
+{
+    if global.ventdoor = 1
+    and image_index = 0
+        image_speed = 0.8
+    if image_speed = 0.8 or image_index = 8
+    {
+        if obj_springbonnie.myroom = 6
+            obj_springbonnie.goingback = 1 //Makes animatronic get ready to return to the Dining Area
+        else
+            obj_springbonnie.goingback = 0
+    }
+    if image_index &gt; 8.5
+    and image_speed = 0.8
+    {
+        image_speed = 0
+        image_index = 8
+        global.canopenventdoor = 1
+    }
+    if global.ventdoor = 0
+    and image_index &gt; 0
+    {
+        if obj_springbonnie.goingback = 0 
+        image_speed = -0.8
+        else if obj_springbonnie.goingback = 0 
+        image_speed = -0.8
+        obj_springbonnie.goingback = 0 
+        image_speed = -0.8
+    }
+       if image_index &lt; 0
+    and image_speed = -0.8
+    {
+        image_speed = 0
+        image_index = 0
+        global.cancloseventdoor = 1
+        
+    }
+}
+
+
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

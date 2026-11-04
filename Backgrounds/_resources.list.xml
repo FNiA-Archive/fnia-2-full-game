@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg_office" type="RESOURCE"/>
+  <resource name="back_menu" type="RESOURCE"/>
+  <resource name="bg_gameover" type="RESOURCE"/>
+  <resource name="bg_information" type="RESOURCE"/>
+  <resource name="bg_newspaperintro" type="RESOURCE"/>
+  <resource name="bg_democomeplete" type="RESOURCE"/>
+  <resource name="bg_disclaimer" type="RESOURCE"/>
+  <resource name="bg_night1" type="RESOURCE"/>
+  <resource name="bg_alpha_thankyou" type="RESOURCE"/>
+  <resource name="bg_night2" type="RESOURCE"/>
+  <resource name="bg_night3" type="RESOURCE"/>
+  <resource name="bg_night4" type="RESOURCE"/>
+  <resource name="bg_night5" type="RESOURCE"/>
+</resources>

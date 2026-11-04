@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">mybacktimer = 60+random(310)//This is the time Bonnie stays in the office's left door when it is closed before leaving and moving back to Dining Area. Bonnie takes stays shorter time in the door than Chica.
+backtimer = mybacktimer
+mymovetime = 250+random(1000) //This is the time the animatronic takes to move from one room to another after leaving Show Stage. Change this to any value you want.
+movetime = 500+random(1700)//This is the initial time the animatronic takes to move out of the Show Stage. Change this to any value you want.
+//Variable "myroom" stands for the room the animatronic is located.
+//myroom = 0 - Show Stage
+//myroom = 1 - Dining Area
+//myroom = 2 - Backstage
+//myroom = 3 - West Hall 1
+//myroom = 4 - West Hall 2
+//myroom = 5 - Office Door
+//myroom = 6 - Unable to use lights/door buttons, and jumpscare when monitor is pulled up.
+//Bonnie has a set path of moving to Show Stage &gt; Dining Area &gt; West Hall 1 &gt; West Hall 2 &gt; Office Door, and sometimes move to Backstage when it is on Dining Area
+//If you are going to edit the animatronic objects, be sure to edit as well objects that check the animatronic's variable "myroom" to work; those being the jumpscares and Draw event in obj_controller, obj_buttons_light, obj_buttons_doors, obj_door, and all camera objects.
+myroom = 0
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

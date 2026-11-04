@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (image_index &gt; 13.2 and sprite_index = spr_jumpscare_chica)
+or (image_index &gt; 10.2 and sprite_index = spr_jumpscare_bonnie)
+or (image_index &gt; 67.2 and sprite_index = spr_jumpscare_puppet)
+or (image_index &gt; 14.2 and sprite_index = spr_jumpscare_freddy2)
+or (image_index &gt; 24.2 and sprite_index = spr_jumpscare_mangle)
+or (image_index &gt; 41.2 and sprite_index = spr_jumpscare_foxy)
+or (image_index &gt; 10.2 and sprite_index = spr_jumpscare_springbonnie)
+or (image_index &gt; 7.2 and sprite_index = spr_jumpscare_goldenfreddy)
+
+    a -= 1
+if a &lt; 1 or (image_index &gt; 18.2 and sprite_index = spr_jumpscare_freddy)
+{
+    sprite_index = spr_interrupted
+    sound_stop(snd_scream)
+}
+if a &lt; 1 or (image_index &gt; 12.2 and sprite_index = spr_jumpscare_foxy)
+{
+    if image_speed != 0
+    {
+    image_speed = 0
+        alarm[0] = 10
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

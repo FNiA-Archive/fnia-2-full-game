@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">mybacktimer = 130+random(320)//This is the time freddy stands in the office hall, before leaving
+backtimer = mybacktimer
+mymovetime = 550+random(1800)//This is the time the animatronic takes to move. Change this to any value you want.
+movetime = 800+random(2000)//This is the initial time the animatronic takes to move to the second phase in the closet. Change this to any value you want.
+//Variable "myroom" stands for:
+//myroom = 0 - Foxy in cove
+//myroom = 1 - Foxy peeking out
+//myroom = 2 - Foxy standing out 
+//myroom = 3 - foxy hall (use torch)
+//myroom = 4 - Jumpscare if panties isnt used
+myroom = 0
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

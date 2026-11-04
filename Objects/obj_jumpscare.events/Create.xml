@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if  sprite_index != spr_jumpscare_chica
+and sprite_index != spr_jumpscare_bonnie
+and sprite_index != spr_jumpscare_puppet
+and sprite_index != spr_jumpscare_freddy2
+and sprite_index != spr_jumpscare_mangle
+and sprite_index != spr_jumpscare_foxy
+and sprite_index != spr_jumpscare_springbonnie
+and sprite_index != spr_jumpscare_goldenfreddy
+    a = 3
+sound_stop_all()
+with obj_controller instance_destroy()
+with obj_controller2 instance_destroy()
+with obj_controller3 instance_destroy()
+with obj_controller4 instance_destroy()
+with obj_controller5 instance_destroy()
+ with obj_night1text instance_destroy()
+ with obj_night2text instance_destroy()
+  with obj_night3text instance_destroy()
+   with obj_night4text instance_destroy()
+    with obj_night5text instance_destroy()
+    with obj_chica2 instance_destroy()
+    with obj_foxy1 instance_destroy()
+    with obj_mangle instance_destroy()
+    with obj_camera instance_destroy()
+    with obj_controller instance_destroy()
+      with obj_hours3 instance_destroy()
+    with obj_hours2 instance_destroy()
+    with obj_hours instance_destroy()
+    with obj_slidingmovement instance_destroy()
+    with obj_buttons_light instance_destroy()
+    with obj_camera_button instance_destroy()
+    with obj_torch instance_destroy()
+    with obj_mask instance_destroy()
+    with obj_mask_button instance_destroy()
+    with obj_healthbar instance_destroy()
+    with obj_health_decrease instance_destroy()
+    with obj_health_text instance_destroy()
+    with obj_6am instance_destroy()
+     with obj_6am2 instance_destroy()
+      with obj_6am3 instance_destroy()
+       with obj_6am4 instance_destroy()
+        with obj_6am5 instance_destroy()
+    with obj_bonnie2 instance_destroy()
+    with obj_chica2 instance_destroy()
+    with obj_puppet instance_destroy()
+    with obj_freddy instance_destroy()
+    with obj_mangle instance_destroy()
+     with obj_goldenfreddy instance_destroy()
+      with obj_springbonnie instance_destroy()
+    
+    sound_stop(snd_bblaughing)
+    
+    
+alarm[1] = 2
+sound_play(snd_foxyscare)
+alarm[2] = 115; //how long you want it to play?
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

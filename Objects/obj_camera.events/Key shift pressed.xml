@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="16">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if pull = 1 or sprite_index != spr_cameraforeground
+    exit   
+sprite_index = spr_camera
+image_index = 10.2
+image_speed = -10
+pull = 1
+if obj_bonnie2.myroom = 6
+{
+    ID = instance_create(view_xview[0],y,obj_jumpscare)
+    ID.sprite_index = spr_jumpscare_bonnie
+}
+if obj_mangle.myroom = 6
+{
+    ID = instance_create(view_xview[0],y,obj_jumpscare)
+    ID.sprite_index = spr_jumpscare_mangle
+}
+ if obj_freddy.myroom = 4
+{
+    ID = instance_create(view_xview[0],y,obj_jumpscare)
+    ID.sprite_index = spr_jumpscare_freddy2
+}
+ if obj_bb.myroom = 4
+{
+  
+}
+ 
+ {
+ if obj_puppet.myroom = 3
+            obj_puppet.goingback = 1 //Makes animatronic get ready to return to the Dining Area
+        else
+            obj_puppet.goingback = 0
+            }
+   
+sound_loop(snd_energy)
+sound_stop(snd_monitorup)
+sound_play(snd_monitordown)
+  sound_stop(snd_chica_kitch)
+  instance_activate_object(obj_torch)
+ 
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

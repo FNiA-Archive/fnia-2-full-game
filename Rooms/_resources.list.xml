@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rm_disclaimer" type="RESOURCE"/>
+  <resource name="rm_information" type="RESOURCE"/>
+  <resource name="rm_menu" type="RESOURCE"/>
+  <resource name="rm_newspaperintro" type="RESOURCE"/>
+  <resource name="rm_night1" type="RESOURCE"/>
+  <resource name="rm_game" type="RESOURCE"/>
+  <resource name="rm_night2" type="RESOURCE"/>
+  <resource name="rm_game2" type="RESOURCE"/>
+  <resource name="rm_night3" type="RESOURCE"/>
+  <resource name="rm_game3" type="RESOURCE"/>
+  <resource name="rm_night4" type="RESOURCE"/>
+  <resource name="rm_game4" type="RESOURCE"/>
+  <resource name="rm_night5" type="RESOURCE"/>
+  <resource name="rm_game5" type="RESOURCE"/>
+  <resource name="rm_comeplete" type="RESOURCE"/>
+  <resource name="rm_gameover" type="RESOURCE"/>
+</resources>

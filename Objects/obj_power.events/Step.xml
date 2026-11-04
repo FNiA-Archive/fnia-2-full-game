@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if mypowercounter &lt; 1 //When power value is less than 1, makes you run out of energy
+{
+    
+    with obj_torch instance_destroy()
+    with obj_flashlight instance_destroy()
+    with obj_power instance_destroy()
+    sound_stop(snd_torch)
+    
+    
+    instance_destroy()
+}
+if instance_exists(obj_powerout)
+    exit
+if global.poweruse &gt; 4
+    global.poweruse = 4
+if global.poweruse = 0 //If power bar have one square only
+    mypower -= 0.000 //Decreases power
+else if global.poweruse = 1 //If power bar have two squares
+    mypower -= 0.100 //Decreases power
+else if global.poweruse = 2 //If power bar have three squares
+    mypower -= 0.100 //Decreases power
+else if global.poweruse = 3 //If power bar have four squares
+    mypower -= 0.100 //Decreases power
+else if global.poweruse = 4 //If power bar have five squares
+    mypower -= 0.100 //Decreases power
+if mypower &lt; 0
+{
+    mypowercounter -= 1
+    mypower = 1
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

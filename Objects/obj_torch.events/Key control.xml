@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYBOARD" id="17">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if instance_exists(obj_camera)
+    exit
+if (obj_freddy.myroom = 2 and dir = 0)
+or (obj_freddy.myroom = 2 and dir = 1)
+if (obj_freddy.myroom = 3 and dir = 0)
+or (obj_freddy.myroom = 3 and dir = 1)
+
+
+{
+    //Plays error sound when Bonnie's "myroom" value is 5 or when Chica's "myroom" value is 6
+    sound_play(snd_error)
+    exit
+}
+if image_index = 0 or image_index = 2
+{
+    if dir = 0 and global.halllightsbroken = 0
+    {
+        image_index = 1
+        global.halllights = 1
+        global.rightlights = 0
+        global.leftlights = 0
+        global.poweruse += 0
+        if obj_freddy.myroom = 3
+        {
+            
+        }
+        
+        sound_play(snd_torch)              
+    }
+
+    else if dir = 0 and global.halllightsbroken = 0
+    {
+        image_index = 1
+        global.halllights = 1
+        global.rightlights = 0
+        global.leftlights = 0
+        global.poweruse += 0
+        if obj_freddy.myroom = 3
+        {
+          
+           
+        }
+        
+        sound_play(snd_torch)    
+    }
+  {
+         if obj_freddy.myroom = 3
+            obj_freddy.goingback = 1 //Makes animatronic get ready to return to the Dining Area
+        else
+            obj_freddy.goingback = 0
+            }
+             {
+         if obj_foxy1.myroom = 3
+            obj_foxy1.goingback = 1 //Makes animatronic get ready to return to the Dining Area
+            
+        else
+            obj_foxy1.goingback = 0
+            }
+
+}
+       
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

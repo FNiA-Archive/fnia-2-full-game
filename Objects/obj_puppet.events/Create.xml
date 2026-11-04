@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">mybacktimer = 5+random(10)//This is the time puppet stands in front of you, before leaving
+backtimer = mybacktimer
+mymovetime = 500+random(1200)//This is the time the animatronic takes to move. Change this to any value you want.
+movetime = 1000+random(2400)//This is the initial time the animatronic takes to move to the second phase, out of the box. Change this to any value you want.
+//Variable "myroom" stands for:
+//myroom = 0 - puppet in box
+//myroom = 1 - puppet out of box
+//myroom = 2 - puppet gone
+//myroom = 3 - puppet in Office, staring at player
+//myroom = 4 - Jumpscare if player doesn't pull up monitor
+myroom = 0
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

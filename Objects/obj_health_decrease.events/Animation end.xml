@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if health = 0
+
+
+if (sprite_index == spr_broken_panties) //calling the specific sprite name
+
+image_index=4; //image_index=6 is the last frame of the sprite, being that there are 7 frames in the sprites
+image_speed=1; //stops the sprite loop
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

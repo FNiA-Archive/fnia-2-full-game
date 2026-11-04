@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if health &lt; 1 
+{
+sound_play(snd_broken_panties)
+played=false
+   if(!sound_isplaying(snd_broken_panties)){
+sound_play(snd_broken_panties);
+}
+   {
+    with obj_mask instance_destroy()
+    with obj_mask_button instance_destroy()
+    with obj_healthbar instance_destroy()
+    with obj_health_decrease instance_destroy()
+    with obj_health_text instance_destroy()
+    instance_activate_object(obj_camera_button)
+      }
+     
+  
+
+   
+   
+
+    
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

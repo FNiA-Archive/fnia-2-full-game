@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">mybacktimer = 60+random(250)//This is the gf in vent
+backtimer = mybacktimer
+mymovetime = 100+random(600)//This is the time the animatronic takes to move. Change this to any value you want.
+movetime = 220+random(1200)//This is the initial time the animatronic takes to move to the second phase, out of the box. Change this to any value you want.
+//Variable "myroom" stands for:
+//myroom = 0 - gf in closet
+//myroom = 1 - gf gone
+//myroom = 2 - gf in bonnie vent room
+//myroom = 3 - gf vent noises
+//myroom = 4 - Jumpscare if player doesn't call back gf
+myroom = 0
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
